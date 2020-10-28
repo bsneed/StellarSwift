@@ -1,3 +1,6 @@
+## Version 0.0.3
+
+- Restart sourcekit-lsp appropriately if it encounters issues.
 
 ## Version 0.0.2
 

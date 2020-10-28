@@ -34,6 +34,13 @@ class SwiftLanguageServer {
         var client = new LanguageClient('Swift', 'Stellar Swift Language Server', serverOptions, clientOptions);
         
         try {
+            client.onDidStop(function(error) {
+                console.log('sourcekit-lsp stopped. \"' + error + '\"');
+                if (error !== undefined) {
+                    this.start();
+                }
+            }, this);
+            
             // Start the client
             client.start();
             
@@ -48,6 +55,8 @@ class SwiftLanguageServer {
                 console.error(err);
             }
         }
+        
+        console.log('sourcekit-lsp started.')
     }
     
     stop() {
