@@ -16,7 +16,7 @@
             "key": "stellar.swift.language-server",
             "title": "Swift Language Server",
             "type": "path",
-            "placeholder": "Stellar Swift Language Server"
+            "placeholder": "Swift Language Server"
         }
     ],
     "activationEvents": [

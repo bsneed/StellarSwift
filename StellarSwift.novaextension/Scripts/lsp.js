@@ -31,11 +31,13 @@ class SwiftLanguageServer {
             // The set of document syntaxes for which the server is valid
             syntaxes: ['swift']
         };
-        var client = new LanguageClient('Swift', 'Stellar Swift Language Server', serverOptions, clientOptions);
+        var client = new LanguageClient('Swift', 'Swift Language Server', serverOptions, clientOptions);
         
         try {
+            // Setup our restart handler.
             client.onDidStop(function(error) {
-                console.log('sourcekit-lsp stopped. \"' + error + '\"');
+                console.log('sourcekit-lsp stopped. error = \"' + error + '\"');
+                // if Nova stops it on purpose, the error will be undefined.
                 if (error !== undefined) {
                     this.start();
                 }
