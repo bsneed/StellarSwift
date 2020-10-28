@@ -3,7 +3,7 @@
     "name": "StellarSwift",
     "organization": "redf",
     "description": "Language Completion, Build Tasks, Syntax Highlighting ... for Swift",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "bugs": "https://github.com/bsneed/StellarSwift",
     "categories": ["languages"],
     "main": "main.js",
