@@ -5,6 +5,8 @@
     "description": "Language Completion, Build Tasks, Syntax Highlighting ... for Swift",
     "version": "0.0.3",
     "bugs": "https://github.com/bsneed/StellarSwift",
+    "homepage": "https://github.com/bsneed/StellarSwift",
+    "repository": "https://github.com/bsneed/StellarSwift",
     "categories": ["languages"],
     "main": "main.js",
     "entitlements": {
