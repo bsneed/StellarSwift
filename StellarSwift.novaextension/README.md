@@ -4,7 +4,7 @@
 🎈 It can also be helpful to include a screenshot or GIF showing your extension in action:
 -->
 
-![](https://d.pr/i/ooGCyE)
+![](https://cdn-std.droplr.net/files/acc_44006/ooGCyE)
 
 ## Requirements
 

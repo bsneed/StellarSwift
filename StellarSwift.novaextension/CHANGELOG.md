@@ -1,3 +1,8 @@
+
+## Version 0.0.2
+
+- Fixed screenshot in README.
+
 ## Version 0.0.1
 
 - Created Language Server for Swift.
