@@ -1,0 +1,25 @@
+{
+    "identifier": "redf.StellarSwift",
+    "name": "StellarSwift",
+    "organization": "redf",
+    "description": "Language Completion, Build Tasks, Syntax Highlighting ... for Swift",
+    "version": "0.0.1",
+    "bugs": "https://github.com/bsneed/StellarSwift",
+    "categories": ["languages"],
+    "main": "main.js",
+    "entitlements": {
+        "process": true,
+        "filesystem": "readonly"
+    },
+    "config": [
+        {
+            "key": "stellar.swift.language-server",
+            "title": "Swift Language Server",
+            "type": "path",
+            "placeholder": "Stellar Swift Language Server"
+        }
+    ],
+    "activationEvents": [
+        "onWorkspaceContains:Package.swift"
+    ]
+}
