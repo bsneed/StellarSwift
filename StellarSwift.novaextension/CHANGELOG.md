@@ -1,6 +1,9 @@
 ## Version 0.0.3
 
 - Restart sourcekit-lsp appropriately if it encounters issues.
+- Added new Tasks for Running & Testing.
+- Now respects the xcode-select settings for which toolchain is active.
+- Auto-restart sourcekit-lsp if xcode-select changes toolchain.
 
 ## Version 0.0.2
 

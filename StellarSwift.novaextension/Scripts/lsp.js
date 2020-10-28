@@ -20,12 +20,16 @@ class SwiftLanguageServer {
         // Use the default server path
         // TODO: figure out the currently selected toolchain
         if (!path) {
-            path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp';
+            path = '/usr/bin/xcrun';
         }
         
         // Create the client
         var serverOptions = {
-            path: path
+            path: path,
+            args: [
+                "--run",
+                "sourcekit-lsp"
+            ]
         };
         var clientOptions = {
             // The set of document syntaxes for which the server is valid

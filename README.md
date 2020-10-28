@@ -17,10 +17,7 @@ These definitions were provided by Pixel Foundry; A huge debt of gratitude to th
 
 ## TODO
 
-- Respect the values set by `xcode-select` for the Xcode toolchain path.
 - Update errors on screen from completion/errors a little less aggressively.
-- Figure out how to get the Run build command functioning properly.
-- Figure out the appropriate place for running Tests.
 - Add support for xcodebuild.
 
 ...

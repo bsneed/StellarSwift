@@ -4,24 +4,44 @@ class SwiftTaskProvider {
 	}
 	
 	provideTasks() {
-		let task = new Task("Swift");
+		// Running executable
+		let runner = new Task("Execute");
 		
-		task.setAction(Task.Build, new TaskProcessAction('/usr/bin/swift', {
+		runner.setAction(Task.Build, new TaskProcessAction('/usr/bin/swift', {
 			args: ["build"],
 			env: {}
 		}));
 		
-		task.setAction(Task.Run, new TaskProcessAction('/usr/bin/swift', {
+		runner.setAction(Task.Run, new TaskProcessAction('/usr/bin/swift', {
+			args: ["run"],
+			env: {}
+		}));
+		
+		runner.setAction(Task.Clean, new TaskProcessAction('/usr/bin/swift', {
+			args: ["package", "clean"],
+			env: {}
+		}));
+		
+		// Running tests
+		let tester = new Task("Test");
+		
+		tester.setAction(Task.Build, new TaskProcessAction('/usr/bin/swift', {
+			args: ["build"],
+			env: {}
+		}));
+		
+		tester.setAction(Task.Run, new TaskProcessAction('/usr/bin/swift', {
 			args: ["test"],
 			env: {}
 		}));
 		
-		task.setAction(Task.Clean, new TaskProcessAction('/usr/bin/swift', {
+		tester.setAction(Task.Clean, new TaskProcessAction('/usr/bin/swift', {
 			args: ["package", "clean"],
 			env: {}
 		}));
 
-		return [task];
+		// Return the tasks
+		return [runner, tester];
 	}
 }
 
