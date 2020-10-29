@@ -8,7 +8,7 @@ Currently only supports Swift.  Hard-coded at the moment to /Applications/Xcode.
 
 ## Build Tasks
 
-Build commands for Swift Package Manager project.  Build/Clean currently are functional, however Run currently only runs Tests.
+Build commands for Swift Package Manager project.  Two separate task profiles for Running and Testing.
 Build failures and issues do currently show up in the `issues` pane.
 
 ## Syntax Highlighting
