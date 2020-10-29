@@ -1,3 +1,8 @@
+## Version 0.0.4
+
+- Add some swift language highlighting that wasn't there already.
+- Extension now activates if any .swift file is opened.
+
 ## Version 0.0.3
 
 - Restart sourcekit-lsp appropriately if it encounters issues.

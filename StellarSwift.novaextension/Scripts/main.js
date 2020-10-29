@@ -19,6 +19,6 @@ exports.deactivate = function() {
 // Register our build tasks
 nova.assistants.registerTaskAssistant(new SwiftTaskProvider(), {
     identifier: "stellar.swift.build-tasks",
-    name: "Stellar Swift Build"
+    name: "Swift"
 });
 

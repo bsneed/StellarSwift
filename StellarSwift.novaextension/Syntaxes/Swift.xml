@@ -393,8 +393,10 @@
 					<string>endif</string>
 					<string>error</string>
 					<string>file</string>
+					<string>fileID</string>
 					<string>fileLiteral</string>
 					<string>function</string>
+					<string>if</string>
 					<string>imageLiteral</string>
 					<string>line</string>
 					<string>selector</string>
@@ -412,6 +414,7 @@
 					<string>_exported</string>
 					<string>available</string>
 					<string>discardableResult</string>
+					<string>testable</string>
 				</strings>
 			</scope>
 		</collection>
