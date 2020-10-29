@@ -4,7 +4,7 @@ Swift Addons for Panic's Nova app.
 
 ## Language Server
 
-Currently only supports Swift.  Hard-coded at the moment to /Applications/Xcode.app/..., however this will be changed in the near future.
+Currently only supports Swift.  Toolchains chosen via xcode-select are respected.
 
 ## Build Tasks
 
