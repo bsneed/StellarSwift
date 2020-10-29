@@ -17,6 +17,7 @@ These definitions were provided by Pixel Foundry; A huge debt of gratitude to th
 
 ## TODO
 
+- Add Tasks for swift-based scripting.
 - Update errors on screen from completion/errors a little less aggressively.
 - Add support for xcodebuild.
 
