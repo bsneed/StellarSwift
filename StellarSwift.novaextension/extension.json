@@ -15,7 +15,7 @@
     },
     "config": [
         {
-            "key": "stellar.swift.language-server",
+            "key": "stellar.swift.language-server-path",
             "title": "Swift Language Server",
             "type": "path",
             "placeholder": "Swift Language Server"
