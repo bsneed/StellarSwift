@@ -43,7 +43,7 @@ class SwiftLanguageServer {
                 console.log('sourcekit-lsp stopped. error = \"' + error + '\"');
                 // if Nova stops it on purpose, the error will be undefined.
                 if (error !== undefined) {
-                    this.start();
+                    this.start(path);
                 }
             }, this);
             
