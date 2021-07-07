@@ -56,6 +56,15 @@
 		<include syntax="self" collection="keywords" />
 	</scopes>
 
+	<indentation>
+		<increase>
+			<expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)</expression>
+		</increase>
+		<decrease>
+			<expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+		</decrease>
+	</indentation>
+
 	<collections>
 		<collection name="values">
 			<include syntax="self" collection="strings" />
