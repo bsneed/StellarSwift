@@ -307,6 +307,7 @@
 				<strings>
 					<!-- declarations -->
 					<string>associatedtype</string>
+					<string>async</string>
 					<string>class</string>
 					<string>deinit</string>
 					<string>enum</string>
@@ -327,9 +328,11 @@
 					<string>static</string>
 					<string>struct</string>
 					<string>subscript</string>
+					<string>throws</string>
 					<string>typealias</string>
 					<string>var</string>
 					<!-- statements -->
+					<string>await</string>
 					<string>break</string>
 					<string>case</string>
 					<string>continue</string>
@@ -358,7 +361,6 @@
 					<string>self</string>
 					<string>Self</string>
 					<string>throw</string>
-					<string>throws</string>
 					<string>true</string>
 					<string>try</string>
 					<!-- patterns -->
