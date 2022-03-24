@@ -165,10 +165,13 @@
 					<context behavior="subtree" group="function" />
 				</symbol>
 				<starts-with>
-					<expression>\b(func)\s+([^\s:;,.{}()&lt;&gt;\-–—!@#$%^&amp;*+=?&quot;&apos;\\|]+)\s*\([\S\s]*?\)[\S\s]*?({)</expression>
+					<expression>\b(func)\s+([^\s:;,.{}()&lt;&gt;\-–—!@#$%^&amp;*+=?&quot;&apos;\\|]+)&#10;\s*\([\S\s]*?\)&#10;\s*(\basync\b)?\s*(\bthrows\b)?\s*&#10;(\s*-&gt;\s*(\w+))?&#10;\s*({)</expression>
 					<capture number="1" name="swift.keyword" />
 					<capture number="2" name="swift.identifier.function.name" />
-					<capture number="3" name="swift.bracket" />
+					<capture number="3" name="swift.keyword" />
+					<capture number="4" name="swift.keyword" />
+					<capture number="6" name="swift.identifier.type.name" />
+					<capture number="7" name="swift.bracket" />
 				</starts-with>
 				<ends-with>
 					<expression>\}</expression>
