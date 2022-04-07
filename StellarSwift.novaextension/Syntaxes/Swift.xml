@@ -56,6 +56,15 @@
 		<include syntax="self" collection="keywords" />
 	</scopes>
 
+	<indentation>
+		<increase>
+			<expression>(\{[^}\"']*$)|(\[[^\]\"']*$)|(\([^)\"']*$)</expression>
+		</increase>
+		<decrease>
+			<expression>^\s*(\s*/\*.*\*/\s*)*[\}\]\)\\]</expression>
+		</decrease>
+	</indentation>
+
 	<collections>
 		<collection name="values">
 			<include syntax="self" collection="strings" />
@@ -156,10 +165,13 @@
 					<context behavior="subtree" group="function" />
 				</symbol>
 				<starts-with>
-					<expression>\b(func)\s+([^\s:;,.{}()&lt;&gt;\-–—!@#$%^&amp;*+=?&quot;&apos;\\|]+)\s*\([\S\s]*?\)[\S\s]*?({)</expression>
+					<expression>\b(func)\s+([^\s:;,.{}()&lt;&gt;\-–—!@#$%^&amp;*+=?&quot;&apos;\\|]+)&#10;\s*\([\S\s]*?\)&#10;\s*(\basync\b)?\s*(\bthrows\b)?\s*&#10;(\s*-&gt;\s*(\w+))?&#10;\s*({)</expression>
 					<capture number="1" name="swift.keyword" />
 					<capture number="2" name="swift.identifier.function.name" />
-					<capture number="3" name="swift.bracket" />
+					<capture number="3" name="swift.keyword" />
+					<capture number="4" name="swift.keyword" />
+					<capture number="6" name="swift.identifier.type.name" />
+					<capture number="7" name="swift.bracket" />
 				</starts-with>
 				<ends-with>
 					<expression>\}</expression>
@@ -298,6 +310,7 @@
 				<strings>
 					<!-- declarations -->
 					<string>associatedtype</string>
+					<string>async</string>
 					<string>class</string>
 					<string>deinit</string>
 					<string>enum</string>
@@ -318,9 +331,11 @@
 					<string>static</string>
 					<string>struct</string>
 					<string>subscript</string>
+					<string>throws</string>
 					<string>typealias</string>
 					<string>var</string>
 					<!-- statements -->
+					<string>await</string>
 					<string>break</string>
 					<string>case</string>
 					<string>continue</string>
@@ -349,7 +364,6 @@
 					<string>self</string>
 					<string>Self</string>
 					<string>throw</string>
-					<string>throws</string>
 					<string>true</string>
 					<string>try</string>
 					<!-- patterns -->
